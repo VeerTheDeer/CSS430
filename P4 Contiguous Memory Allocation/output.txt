@@ -1,0 +1,18 @@
+veersaini@MacBookPro P4 Contiguous Memory Allocation % gcc -std=c11 Memo.c -o memo   
+veersaini@MacBookPro P4 Contiguous Memory Allocation % ./memo                     
+Commands:
+  A <name> <size> <F|B|W>   Allocate
+  F <name>                  Free
+  S                         Show
+  C                         Compact
+  R <filename>              Read script
+  E                         Exit
+Memo> R Memo.txt            
+AAAAAAAAAA..........BBBBBBBBBB....................CCCCC...............DDDDD.....
+Cannot find 25 free bytes
+AAAAAAAAAA..........BBBBBBBBBBFFFFFFFFFFFFFFFGGG..CCCCCH..............DDDDD.....
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Everything works according to the specifications!
+This deserves a 25/25 --> 100%!
